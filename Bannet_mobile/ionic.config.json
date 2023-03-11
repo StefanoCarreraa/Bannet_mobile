@@ -1,0 +1,7 @@
+{
+  "name": "Bannet_mobile",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

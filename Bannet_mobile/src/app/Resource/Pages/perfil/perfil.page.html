@@ -1,0 +1,57 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title class="ion-title">
+      <img src="../../assets/Images/logo-bannet.png" alt="Logo" class="logo" />
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" *ngFor="let result of results">
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Informacion Personal</ion-card-title>
+    </ion-card-header>
+
+    <ion-card-content>
+      <p>Nombre :</p>
+      <h2>{{result.name}}</h2>
+    </ion-card-content>
+    <ion-card-content>
+      <p>Tipo de Documento :</p>
+      <h2>{{result.tipodoc}}</h2>
+    </ion-card-content>
+    <ion-card-content>
+      <p>Nro. Documento :</p>
+      <h2>{{result.nrodocumento}}</h2>
+    </ion-card-content>
+    <ion-card-content>
+      <p>Correo Electrónico :</p>
+      <ion-item fill="outline">
+        <ion-input ngModel email type="email" placeholder="{{result.correo}}"></ion-input>
+        <ion-note slot="error">Correo Invalido</ion-note>
+      </ion-item>
+    </ion-card-content>
+
+    <ion-card-content>
+      <p>Número Telefono :</p>
+      <ion-item fill="outline">
+        <ion-input placeholder="{{result.telefono}}"></ion-input>
+      </ion-item>
+    </ion-card-content>
+    <ion-card-content>
+      <p>Cambiar Contraseña :</p>
+      <ion-item fill="outline">
+        <ion-input type="password" placeholder="Enter text"></ion-input>
+      </ion-item>
+    </ion-card-content>
+    <ion-card-content>
+      <p>Confirmar Contraseña :</p>
+      <ion-item fill="outline">
+        <ion-input type="password" placeholder="Enter text"></ion-input>
+      </ion-item>
+    </ion-card-content>
+    <ion-card-content>
+      <ion-button hrf="" class="Button-GuardarCambios">Guardar Cambios</ion-button>
+    </ion-card-content>
+  </ion-card>
+</ion-content>

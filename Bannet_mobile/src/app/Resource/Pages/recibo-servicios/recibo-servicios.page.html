@@ -1,0 +1,44 @@
+<div class="ion-page" id="main-content">
+  <ion-header>
+    <ion-toolbar>
+      <ion-title class="ion-title">
+        <img
+          src="../../assets/Images/logo-bannet.png"
+          alt="Logo"
+          class="logo"
+        />
+      </ion-title>
+      <ion-buttons class="ion-buttons" slot="start">
+        <ion-menu-button></ion-menu-button>
+      </ion-buttons>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-content>
+    <ion-card >
+      <ion-card-header>
+        <ion-card-title style="text-align: center"
+          >Recibo de Servicios</ion-card-title
+        >
+      </ion-card-header>
+    </ion-card>
+    <ion-searchbar [debounce]="1000" (ionInput)="handleChange($event)"></ion-searchbar>
+
+    <ion-card>
+    <ion-list auto-hide="true">
+      <ion-item button routerLink="./detalle-recibos" routerDirection="forward" *ngFor="let result of results">
+        <ion-icon
+          class="icono"
+          aria-hidden="true"
+          name="cube-outline"
+        ></ion-icon>
+        <ion-label>{{ result }}</ion-label>
+        <ion-label class="estado">Pendiente</ion-label>
+      </ion-item>
+    </ion-list>
+  </ion-card>
+
+  </ion-content>
+
+  <!--<app-explore-container name="Tab 1 page"></app-explore-container>-->
+</div>

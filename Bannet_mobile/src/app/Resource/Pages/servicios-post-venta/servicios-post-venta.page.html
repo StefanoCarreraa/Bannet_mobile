@@ -1,0 +1,59 @@
+<div class="ion-page" id="main-content">
+  <ion-header>
+    <ion-toolbar>
+      <ion-title class="ion-title">
+        <img
+          src="../../assets/Images/logo-bannet.png"
+          alt="Logo"
+          class="logo"
+        />
+      </ion-title>
+      <ion-buttons class="ion-buttons" slot="start">
+        <ion-menu-button></ion-menu-button>
+      </ion-buttons>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-content>
+    <ion-card>
+      <ion-card-header>
+        <ion-card-title class="titulo">Servicios Post-Venta</ion-card-title>
+      </ion-card-header>
+    </ion-card>
+    <ion-card>
+      <ion-card-content>
+        <ion-card-title>Contrato</ion-card-title>
+        <ion-select class="selector" placeholder="Seleccionar">
+          <ion-select-option
+            *ngFor="let result2 of results2"
+            value="{{result2.id}}"
+          >{{result2.name}}</ion-select-option>
+        </ion-select>
+      </ion-card-content>
+    </ion-card>
+
+    <ion-card>
+      <ion-card-content>
+        <ion-card-title>Tipo de Servicio</ion-card-title>
+        <ion-select class="selector" placeholder="Seleccionar">
+          <ion-select-option
+            *ngFor="let result of results"
+            value="{{result.id}}"
+            >{{result.name}}</ion-select-option
+          >
+        </ion-select>
+      </ion-card-content>
+    </ion-card>
+    <ion-card>
+      <ion-card-content>
+        Por favor detalle su solicitud
+        <ion-textarea
+          class="inputlarge"
+          placeholder="Enter text"
+        ></ion-textarea>
+      </ion-card-content>
+    </ion-card>
+  </ion-content>
+
+  <!--<app-explore-container name="Tab 1 page"></app-explore-container>-->
+</div>

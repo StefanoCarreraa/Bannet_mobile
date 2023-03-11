@@ -1,0 +1,50 @@
+.icono {
+  width: 20px;
+  padding-right: 7px;
+  color: #123a80;
+}
+
+.logo {
+  width: 100px;
+  max-width: 100px;
+}
+.ion-buttons {
+  position: absolute;
+}
+.ion-title {
+  text-align: center;
+}
+
+.estado {
+  color: #000;
+  text-align: center;
+  padding: 7px;
+  background-color: red;
+  border-radius: 10px;
+}
+.impresion {
+    color: #000;
+    text-align: center;
+    padding: 7px;
+    background-color: rgb(251, 255, 0);
+    border-radius: 10px;
+}
+
+ion-card-title,
+ion-card-content {
+  text-align: center;
+}
+.title {
+}
+.subtitle {
+  font-size: 13px;
+}
+.content-logo {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+.logo-img {
+  padding: 0;
+  width: 40%;
+}
