@@ -11,3 +11,11 @@
 .title p {
     margin-top: 0 !important;
 }
+.background{
+    --background:#757575;
+}
+@media (prefers-color-scheme: dark) {
+    .background{
+        --background:#0000;
+    }
+}

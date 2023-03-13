@@ -24,3 +24,13 @@
 @import "~@ionic/angular/css/text-alignment.css";
 @import "~@ionic/angular/css/text-transformation.css";
 @import "~@ionic/angular/css/flex-utils.css";
+
+.alert-radio-label.sc-ion-alert-md,
+.alert-radio-label.sc-ion-alert-ios {
+  font-size: 11px;
+  white-space: normal;
+}
+.ion-sel-1-lbl{
+  font-size: 11px;
+  white-space: normal;
+}
