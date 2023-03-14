@@ -9,14 +9,18 @@ import { ModalController } from '@ionic/angular';
 })
 export class ReciboServiciosPage implements OnInit {
   
-  public data = ['B001-182', 'B001-183','B001-185','B001-189','B001-198','B001-233','B001-244','B001-246','B001-268','B001-278','B001-296','B001-325','B001-365'];
+  public data = [
+    { id: '000000000281662', plan: 'PLAN 2023-02 INTERNET 100MBPS + 1 BANTEL TV' ,periodo: '2023 - MARZO',importe: '91.00	'},
+    { id: '000000000353253', plan: 'PLAN 2023-02 INTERNET 100MBPS + 1 BANTEL TV' ,periodo: '2023 - MARZO',importe: '92.00	'},
+    { id: '000000000643643', plan: 'PLAN 2023-02 INTERNET 100MBPS + 1 BANTEL TV' ,periodo: '2023 - MARZO',importe: '93.00	'},
+    { id: '000000000241195', plan: 'PLAN 2023-02 INTERNET 100MBPS + 1 BANTEL TV' ,periodo: '2023 - MARZO',importe: '94.00	'},
+  ];
   public results = [...this.data];
-  
+
   handleChange(event: any) {
     const query = event.target.value.toLowerCase();
-    this.results = this.data.filter(d => d.toLowerCase().indexOf(query) > -1);
+    this.results = this.data.filter((d) => d.plan.toLowerCase().indexOf(query) > -1);
   }
-
   constructor(
     public modalCtrl: ModalController
   ) { 

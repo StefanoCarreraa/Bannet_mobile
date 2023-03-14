@@ -7,9 +7,14 @@ const routes: Routes = [
   {
     path: '',
     component: ReciboServiciosPage
-  },  {
+  },
+  {
     path: 'detalle-recibos',
     loadChildren: () => import('../../../Resource/Pages/recibo-servicios/detalle-recibos/detalle-recibos.module').then( m => m.DetalleRecibosPageModule)
+  },
+  {
+    path: 'detalle-recibos/:result',
+    component: ReciboServiciosPage
   }
 
 ];

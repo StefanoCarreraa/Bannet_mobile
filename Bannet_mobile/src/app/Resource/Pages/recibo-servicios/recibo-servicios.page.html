@@ -26,13 +26,13 @@
 
     <ion-card>
     <ion-list auto-hide="true">
-      <ion-item button routerLink="./detalle-recibos" routerDirection="forward" *ngFor="let result of results">
+      <ion-item button [routerLink]="['./detalle-recibos', result]" routerDirection="forward" *ngFor="let result of results">
         <ion-icon
           class="icono"
           aria-hidden="true"
           name="cube-outline"
         ></ion-icon>
-        <ion-label>{{ result }}</ion-label>
+        <ion-label>{{ result.id }}</ion-label>
         <ion-label class="estado">Pendiente</ion-label>
       </ion-item>
     </ion-list>
